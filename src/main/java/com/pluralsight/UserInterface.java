@@ -57,7 +57,7 @@ public class UserInterface {
                 ChipsMenu();
                 break;
             case 4:
-                CheckoutScreen.CheckoutMenu();
+                CheckoutMenu();
                 break;
             case 0:
                 System.out.println("Going back to HomeScreen...");
@@ -75,43 +75,35 @@ public class UserInterface {
     public static void SandwichMenu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Select your bread: \n" +
-                "White, Wheat, Rye, Wrap");
+                "1) White \n" + "2) Wheat \n" + "3) Rye \n" + "4) Wrap");
 
-        String breadChoice = scanner.nextLine();
+        int breadChoice = scanner.nextInt();
 
         switch (breadChoice) {
-            case "White":
-            case "white":
-                System.out.println(breadChoice);
+            case 1:
                 break;
-            case "Wheat":
-            case "wheat":
-                System.out.println(breadChoice);
+            case 2:
                 break;
-            case "Rye":
-            case "rye":
-                System.out.println(breadChoice);
+            case 3:
                 break;
-            case "Wrap":
-            case "wrap":
-                System.out.println(breadChoice);
+            case 4:
                 break;
             default:
                 System.out.println("Invalid choice. Please try again.");
                 SandwichMenu();
         }
 
-        System.out.println("Select your size (Enter number): \n" +
-                "4\" - $5.50, 8\" - $7.00, 12\" - $8.50");
+        System.out.println("Select your size: \n" +
+                "1) 4\" - $5.50 \n" + "2) 8\" - $7.00 \n" + "3) 12\" - $8.50");
 
         int breadSize = scanner.nextInt();
 
         switch (breadSize) {
-            case 4:
+            case 1:
                 break;
-            case 8:
+            case 2:
                 break;
-            case 12:
+            case 3:
                 break;
             default:
                 System.out.println("Invalid choice. Please try again.");
@@ -124,7 +116,6 @@ public class UserInterface {
         System.out.println(meatChoice);
         scanner.nextLine();
 
-
         System.out.println("Would you like to add extra meat? (Yes/No)");
         String extraMeatOption = scanner.nextLine();
 
@@ -134,10 +125,11 @@ public class UserInterface {
             String extraMeatChoice = scanner.nextLine();
             System.out.println("added extra: " + extraMeatChoice);
         } else if (extraMeatOption.equalsIgnoreCase("No")) {
+            System.out.println("No extra meat added");
 
         }
 
-
+        scanner.nextLine();
         System.out.println("Select cheese of choice: \n" +
                 "American, Provolone, Cheddar, Swiss");
 
@@ -153,28 +145,67 @@ public class UserInterface {
             String extraCheese = scanner.nextLine();
             System.out.println("added extra: " + " " + extraCheese);
         } else if (extraCheeseOption.equalsIgnoreCase("No")) {
-
+            System.out.println("No extra cheese added");
         }
 
+        scanner.nextLine();
         System.out.println("Choose topping of choice (Select multiple if necessary): \n" +
                 "lettuce, peppers, onions, tomatoes, jalapenos, cucumbers, pickles, guacamole, mushrooms");
         String toppingChoice = scanner.nextLine();
         System.out.println("Added: " + " " + toppingChoice);
+        scanner.nextLine();
 
         System.out.println("Select sauce of choice: \n" +
                 "Mayo, Mustard, Ketchup, Ranch, Thousand islands, Vinaigrette");
         String sauceChoice = scanner.nextLine();
         System.out.println("Added: " + " " + sauceChoice);
+        scanner.nextLine();
 
         System.out.println("Would you like your sandwich toasted? (Yes/No)");
         String toastedOption = scanner.nextLine();
         if (toastedOption.equalsIgnoreCase("Yes")) {
             System.out.println("Added: toasted option");
         } else if (toastedOption.equalsIgnoreCase("No")) {
+            System.out.println("No toasted option");
+        }
+
+        // User has option to add more sandwiches to order. Be sure to add up total in Order in checkout.
+        scanner.nextLine();
+        System.out.println("What would you like to do next? \n" +
+                "1) Add sandwich \n" +
+                "2) Add drink \n" +
+                "3) Add chips \n" +
+                "4) Checkout \n" +
+                "0) Cancel order");
+
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                SandwichMenu();
+                break;
+            case 2:
+                DrinkMenu();
+                break;
+            case 3:
+                ChipsMenu();
+                break;
+            case 4:
+                CheckoutMenu();
+                break;
+            case 0:
+                System.out.println("Going back to HomeScreen...");
+                scanner.nextLine();
+                scanner.nextLine();
+                UserInterface.HomeMenu();
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+                scanner.nextLine();
+                OrderMenu();
 
         }
     }
-
 
     public static void DrinkMenu() {
         Scanner scanner = new Scanner(System.in);
@@ -182,27 +213,51 @@ public class UserInterface {
                 "Coke, Sprite, Fanta(Orange), Mountain Dew, Dr. Pepper, Root beer, Brisk (Iced tea), Minute Maid (Lemonade) ");
         String drinkChoice = scanner.nextLine();
         System.out.println(drinkChoice);
+
         System.out.println("Select drink size: \n" +
-                "small - $2.00, Medium - $2.50, Large - $3.00");
-        String drinkSize = scanner.nextLine();
+                "1) Small - $2.00 \n" + "2) Medium - $2.50 \n" + "3) Large - $3.00");
+        int drinkSize = scanner.nextInt();
 
         switch (drinkSize) {
-            case "Small":
-            case "small":
-                System.out.println(drinkChoice + ", " + drinkSize);
+            case 1:
+                System.out.println("Added: " + drinkChoice + ", " + "Small");
                 break;
-            case "M":
-            case "m":
-                System.out.println(drinkChoice + ", " + drinkSize);
+            case 2:
+                System.out.println("Added: " + drinkChoice + ", " + "Medium");
                 break;
-            case "L":
-            case "l":
-                System.out.println(drinkChoice + ", " + drinkSize);
+            case 3:
+                System.out.println("Added: " + drinkChoice + ", " + "Large");
                 break;
             default:
                 System.out.println("Invalid choice. Please try again.");
                 DrinkMenu();
+        }
 
+        System.out.println("What would you like to do next? \n" +
+                "1) Add chips \n" +
+                "2) Checkout \n" +
+                "0) Cancel order");
+
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+
+            case 1:
+                ChipsMenu();
+                break;
+            case 2:
+                CheckoutMenu();
+                break;
+            case 0:
+                System.out.println("Going back to HomeScreen...");
+                scanner.nextLine();
+                scanner.nextLine();
+                UserInterface.HomeMenu();
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+                scanner.nextLine();
+                DrinkMenu();
         }
     }
 
@@ -211,13 +266,38 @@ public class UserInterface {
             System.out.println("Select Chips: \n " +
                     "Doritos (Nacho cheese), Doritos (Cool ranch), Lays (Original), Lays (Sour cream), Lays (Barbeque), Cheetos");
             String chipsChoice = scanner.nextLine();
-            System.out.println(chipsChoice);
+            System.out.println("Added: "+ chipsChoice);
 
+            System.out.println("What would you like to do next? \n" +
+                    "1) Add drink \n" +
+                    "2) Checkout \n" +
+                    "0) Cancel order");
 
+            int choice = scanner.nextInt();
 
+            switch (choice) {
+                case 1:
+                    DrinkMenu();
+                    break;
+                case 2:
+                   CheckoutMenu();
+                    break;
+                case 0:
+                    System.out.println("Going back to HomeScreen...");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    UserInterface.HomeMenu();
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    scanner.nextLine();
+                    ChipsMenu();
+            }
+    }
 
-
-        }
+    public static void CheckoutMenu() {
+        System.out.println("your order: ");
+    }
 
 
 
