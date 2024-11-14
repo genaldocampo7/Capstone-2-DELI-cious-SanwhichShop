@@ -1,19 +1,18 @@
 package com.pluralsight;
 
-public class Meat {
-    String steak;
-    String ham;
-    String salami;
-    String roastBeef;
-    String chicken;
-    String bacon;
+import java.util.ArrayList;
 
-    public Meat(String steak, String ham, String salami, String roastBeef, String chicken, String bacon) {
-        this.steak = steak;
-        this.ham = ham;
-        this.salami = salami;
-        this.roastBeef = roastBeef;
-        this.chicken = chicken;
-        this.bacon = bacon;
+public class Meat {
+    public static void main(String[] args) {
+
+        ArrayList<String> meat = new ArrayList<>();
+        meat.add("Steak");
+        meat.add("Ham");
+        meat.add("Salami");
+        meat.add("Roast beef");
+        meat.add("Chicken");
+        meat.add("Bacon");
+
     }
 }
+

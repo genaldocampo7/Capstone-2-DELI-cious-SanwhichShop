@@ -1,15 +1,16 @@
 package com.pluralsight;
 
-public class Cheese {
-    String american;
-    String provolone;
-    String cheddar;
-    String swiss;
+import java.util.ArrayList;
 
-    public Cheese(String american, String provolone, String cheddar, String swiss) {
-        this.american = american;
-        this.provolone = provolone;
-        this.cheddar = cheddar;
-        this.swiss = swiss;
+public class Cheese {
+    public static void main(String[] args) {
+
+        ArrayList<String> cheese = new ArrayList<>();
+        cheese.add("American");
+        cheese.add("Provolone");
+        cheese.add("Cheddar");
+        cheese.add("Swiss");
+
+
     }
 }

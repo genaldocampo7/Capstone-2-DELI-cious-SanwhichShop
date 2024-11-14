@@ -1,25 +1,22 @@
 package com.pluralsight;
 
-public class Toppings {
-    String lettuce;
-    String peppers;
-    String onions;
-    String tomatoes;
-    String jalapenos;
-    String cucumbers;
-    String pickles;
-    String guacamole;
-    String mushrooms;
+import java.util.ArrayList;
 
-    public Toppings(String lettuce, String peppers, String onions, String tomatoes, String jalapenos, String cucumbers, String pickles, String guacamole, String mushrooms) {
-        this.lettuce = lettuce;
-        this.peppers = peppers;
-        this.onions = onions;
-        this.tomatoes = tomatoes;
-        this.jalapenos = jalapenos;
-        this.cucumbers = cucumbers;
-        this.pickles = pickles;
-        this.guacamole = guacamole;
-        this.mushrooms = mushrooms;
+public class Toppings {
+    public static void main(String[] args) {
+
+    ArrayList<String> toppings = new ArrayList<>();
+    toppings.add("lettuce");
+    toppings.add("peppers");
+    toppings.add("onions");
+    toppings.add("tomatoes");
+    toppings.add("jalapenos");
+    toppings.add("cucumbers");
+    toppings.add("pickles");
+    toppings.add("guacamole");
+    toppings.add("mushrooms");
+
+
+
     }
 }
