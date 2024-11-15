@@ -1,18 +1,26 @@
 package com.pluralsight;
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class Meat {
-    public static void main(String[] args) {
+    private List<String> Meat = List.of("steak", "ham", "salami", "roast beef", "chicken", "bacon");
+    private double price;
 
-        ArrayList<String> meat = new ArrayList<>();
-        meat.add("Steak");
-        meat.add("Ham");
-        meat.add("Salami");
-        meat.add("Roast beef");
-        meat.add("Chicken");
-        meat.add("Bacon");
+    public double getPrice() {
+        return price;
+    }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public List<String> getMeat() {
+        return Meat;
+    }
+
+    public void setMeat(List<String> meat) {
+        Meat = meat;
     }
 }
+
+
 

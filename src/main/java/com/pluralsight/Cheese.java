@@ -1,16 +1,26 @@
 package com.pluralsight;
 
-import java.util.ArrayList;
+
+import java.util.List;
 
 public class Cheese {
-    public static void main(String[] args) {
+   private List<String> Cheese = List.of("american", "provolone", "cheddar", "swiss");
+   private double price;
 
-        ArrayList<String> cheese = new ArrayList<>();
-        cheese.add("American");
-        cheese.add("Provolone");
-        cheese.add("Cheddar");
-        cheese.add("Swiss");
+    public double getPrice() {
+        return price;
+    }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
+    public List<String> getCheese() {
+        return Cheese;
+    }
+
+    public void setCheese(List<String> cheese) {
+        Cheese = cheese;
     }
 }
+

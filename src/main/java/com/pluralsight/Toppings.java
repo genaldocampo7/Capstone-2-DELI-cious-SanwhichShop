@@ -1,22 +1,19 @@
 package com.pluralsight;
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class Toppings {
-    public static void main(String[] args) {
+    public static List<String> toppings = List.of("lettuce", "peppers", "onions", "tomatoes", "jalapenos", "pickles", "guacamole", "mushrooms");
 
-    ArrayList<String> toppings = new ArrayList<>();
-    toppings.add("lettuce");
-    toppings.add("peppers");
-    toppings.add("onions");
-    toppings.add("tomatoes");
-    toppings.add("jalapenos");
-    toppings.add("cucumbers");
-    toppings.add("pickles");
-    toppings.add("guacamole");
-    toppings.add("mushrooms");
+    public Toppings(List<String> toppings) {
+        this.toppings = toppings;
+    }
 
+    public void addMessage() {
+        System.out.println("Toppings: " + String.join(", ", toppings));
+    }
 
-
+    public List<String> getToppings() {
+        return toppings;
     }
 }
+
