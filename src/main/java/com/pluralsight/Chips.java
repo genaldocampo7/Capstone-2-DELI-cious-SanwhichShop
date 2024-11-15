@@ -25,6 +25,8 @@ public class Chips implements Orderable {
         System.out.println("Added: " + chipsName);
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Chips: " + chipsName;
+    }
 }

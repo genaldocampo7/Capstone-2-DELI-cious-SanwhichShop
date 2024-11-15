@@ -250,7 +250,7 @@ public class UserInterface {
             Toppings toppingObj = new Toppings(toppings);
 
             Sandwich sandwich = new Sandwich(breadType, breadSize, meat, extraMeat, cheese, extraCheese, toppingObj, sauce, side, toasted);
-            Order.addItem(sandwich);
+            currentOrder.addItem(sandwich);
 
                 scanner.nextLine();
                 System.out.println("What would you like to do next? \n" +
@@ -343,7 +343,7 @@ public class UserInterface {
             }
 
             Drink drink = new Drink(size, drinkType);
-            Order.addItem(drink);
+            currentOrder.addItem(drink);
 
             System.out.println("Added: " + drink);
 
@@ -406,7 +406,7 @@ public class UserInterface {
             }
 
             Chips chips = new Chips(chipsType);
-            Order.addItem(chips);
+            currentOrder.addItem(chips);
 
             System.out.println("Added: " + chips);
 

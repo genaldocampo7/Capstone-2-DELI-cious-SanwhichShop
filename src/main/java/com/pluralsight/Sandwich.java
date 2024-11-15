@@ -118,6 +118,24 @@ public class Sandwich implements Orderable {
         System.out.println("Price: $" + price);
     }
 
+    public Toppings getToppings() {
+        return toppings;
+    }
+
+    public void setToppings(Toppings toppings) {
+        this.toppings = toppings;
+    }
+
+    @Override
+    public String toString() {
+        return "Sandwich: "  + breadType + " " + breadSize + " " + "Toasted: " + (toasted ? "Yes" : "No") + " toppings: " +
+                getToppings() + "\n" +
+                "Meat: " + meat + (extraMeat ? " (extra)" : "") + "\n" +
+                "Cheese: " + cheese + (extraCheese ? " (extra)" : "") + "\n" +
+                "Sauce: " + sauce + "\n" +
+                "Side: " + side + "\n" +
+                "Price: $" + price + " \n";
+    }
 }
 
 

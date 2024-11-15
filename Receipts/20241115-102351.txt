@@ -1,0 +1,14 @@
+Receipt generated on: 20241115-102351
+Sandwich: Wheat 4" Toasted: Yes toppings: Toppings{topping=[lettuce, onions, tomatoes]}
+Meat: Ham (extra)
+Cheese: American
+Sauce: Ranch
+Side: sauce
+Price: $7.75 
+Drink: Coke, medium
+Chips: Doritos (Nacho cheese)
+Total: $11.75
+
+
+
+

@@ -42,6 +42,10 @@ public class Drink implements Orderable {
         System.out.println("Added: " + drinkType + ", " + drinkSize);
     }
 
+    @Override
+    public String toString() {
+        return "Drink: " + drinkType + ", " + drinkSize + "\n";
+    }
 }
 
 

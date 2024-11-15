@@ -25,8 +25,13 @@ I created a diagram as a starting point to show how my application will be struc
 <img width="719" alt="Screenshot 2024-11-15 at 1 58 54 AM" src="https://github.com/user-attachments/assets/36b5c752-72f5-420a-9008-6e10959ecffb">
 
 
+All orders were written and saved as a receipt file in a receipt folder
+
+<img width="755" alt="Screenshot 2024-11-15 at 10 25 08 AM" src="https://github.com/user-attachments/assets/52f635ee-7d52-4d94-b049-81492e0212f2">
 
 
+
+<img width="247" alt="Screenshot 2024-11-15 at 10 25 18 AM" src="https://github.com/user-attachments/assets/5f0add02-92a6-4c64-b393-83c056446811">
 
 
 An interesting piece of code I found was the switch statements I used to determine the prices of meat and cheese and well as extra price which depended on the bread size. It made it really easy to get all the prices under one method.
