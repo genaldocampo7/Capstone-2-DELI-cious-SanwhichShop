@@ -252,7 +252,7 @@ public class UserInterface {
             Sandwich sandwich = new Sandwich(breadType, breadSize, meat, extraMeat, cheese, extraCheese, toppingObj, sauce, side, toasted);
             currentOrder.addItem(sandwich);
 
-                scanner.nextLine();
+
                 System.out.println("What would you like to do next? \n" +
                         "1) Add sandwich \n" +
                         "2) Add drink \n" +
@@ -307,6 +307,9 @@ public class UserInterface {
                 case 3:
                     size = "large";
                     break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    DrinkMenu();
             }
 
             System.out.println("Select your drink: \n" +
@@ -399,6 +402,7 @@ public class UserInterface {
                     break;
                 case 6:
                     chipsType = "Cheetos";
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again");
                     scanner.nextLine();

@@ -11,9 +11,6 @@ public class Toppings {
         this.topping = toppings;
     }
 
-    public void addMessage() {
-        System.out.println("Toppings: " + String.join(", ", toppings));
-    }
 
     public List<String> getToppings() {
         return toppings;
@@ -21,9 +18,7 @@ public class Toppings {
 
     @Override
     public String toString() {
-        return "Toppings{" +
-                "topping=" + topping +
-                '}';
+        return "Toppings: " + topping;
     }
 }
 

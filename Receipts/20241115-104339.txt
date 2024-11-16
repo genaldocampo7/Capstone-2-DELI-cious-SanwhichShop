@@ -1,0 +1,10 @@
+Receipt generated on: 20241115-104339
+Sandwich: White 4" (Toasted: Yes Toppings: [lettuce, onions]
+Meat: Steak
+Cheese: American
+Sauce: Mayo
+Side: Au jus
+Price: $7.25 
+Drink: Sprite, medium
+Chips: Doritos (Cool ranch)
+Total: $11.25

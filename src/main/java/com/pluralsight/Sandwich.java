@@ -1,5 +1,4 @@
 package com.pluralsight;
-import java.util.List;
 
 public class Sandwich implements Orderable {
     private String breadType;
@@ -44,6 +43,7 @@ public class Sandwich implements Orderable {
         }
 
         // Calculate meat price depending on bread size
+
         switch (breadSize) {
             case "4\"":
                 price += 1.00;
@@ -109,8 +109,8 @@ public class Sandwich implements Orderable {
 
     @Override
     public void addMessage() {
-        System.out.println("Sandwich: " + breadType + " " + breadSize + " " + "Toasted: " + (toasted ? "Yes" : "No" +"toppings: "));
-        toppings.addMessage();
+        System.out.println("Sandwich: " + breadType + " " + breadSize + " " + "Toasted: " + (toasted ? "(Yes)" : "(No)") + ", " +
+        getToppings());
         System.out.println("Meat: " + meat + (extraMeat ? " (extra)" : ""));
         System.out.println("Cheese: " + cheese + (extraCheese ? " (extra)" : ""));
         System.out.println("Sauce: " + sauce);
@@ -128,7 +128,7 @@ public class Sandwich implements Orderable {
 
     @Override
     public String toString() {
-        return "Sandwich: "  + breadType + " " + breadSize + " " + "Toasted: " + (toasted ? "Yes" : "No") + " toppings: " +
+        return "Sandwich: "  + breadType + " " + breadSize + " " + "Toasted: " + (toasted ? "(Yes)" : "(No)") + ", " +
                 getToppings() + "\n" +
                 "Meat: " + meat + (extraMeat ? " (extra)" : "") + "\n" +
                 "Cheese: " + cheese + (extraCheese ? " (extra)" : "") + "\n" +

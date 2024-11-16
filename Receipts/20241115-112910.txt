@@ -1,0 +1,16 @@
+Receipt generated on: 20241115-112910
+Sandwich: Rye 8" Toasted): Yes, Toppings: [lettuce, peppers, onions]
+Meat: Salami (extra)
+Cheese: American
+Sauce: Mayo
+Side: Au jus
+Price: $11.5 
+Sandwich: Wheat 12" Toasted): Yes, Toppings: [lettuce, tomatoes, onions, pickles]
+Meat: Roast beef (extra)
+Cheese: Provolone (extra)
+Sauce: Ranch
+Side: sauce
+Price: $15.65 
+Drink: Root beer, large
+Chips: Lays (Barbeque)
+Total: $31.65

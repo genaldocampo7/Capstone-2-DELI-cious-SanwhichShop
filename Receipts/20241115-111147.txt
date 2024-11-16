@@ -1,0 +1,4 @@
+Receipt generated on: 20241115-111147
+Drink: Coke, medium
+Chips: Cheetos
+Total: $4.0

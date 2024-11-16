@@ -30,9 +30,9 @@ public class Drink implements Orderable {
     public double getPrice() {
          if (drinkSize.equalsIgnoreCase("small")) {
              return 2.00;
-         } else if (drinkSize.equalsIgnoreCase("medium")) {
+         } else if (drinkSize.equalsIgnoreCase("Medium")) {
              return 2.50;
-         } else if (drinkSize.equalsIgnoreCase("large")) {
+         } else if (drinkSize.equalsIgnoreCase("Large")) {
              return 3.00;
          } else return 0.0;
     }

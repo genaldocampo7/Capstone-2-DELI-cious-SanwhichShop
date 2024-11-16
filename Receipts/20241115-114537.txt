@@ -1,0 +1,10 @@
+Receipt generated on: 20241115-114537
+Sandwich: Rye 12" Toasted: (Yes), Toppings: [lettuce, onions, jalapenos]
+Meat: Steak (extra)
+Cheese: American (extra)
+Sauce: Mayo
+Side: Au jus
+Price: $15.65 
+Drink: Coke, large
+Chips: Doritos (Nacho cheese)
+Total: $20.15

@@ -1,0 +1,10 @@
+Receipt generated on: 20241115-132221
+Sandwich: Wheat 4" Toasted: (Yes), Toppings: [lettuce, onions, tomatoes]
+Meat: Steak (extra)
+Cheese: American (extra)
+Sauce: Mayo
+Side: Au jus
+Price: $8.05 
+Drink: Diet water, medium
+Chips: Doritos (Nacho cheese)
+Total: $12.05

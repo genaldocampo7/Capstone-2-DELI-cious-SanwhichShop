@@ -1,0 +1,10 @@
+Receipt generated on: 20241115-113209
+Sandwich: Wrap 8" Toasted: (Yes), Toppings: [lettuce, tomatoes, onions]
+Meat: Bacon (extra)
+Cheese: American
+Sauce: Ranch
+Side: Au jus
+Price: $11.5 
+Drink: Diet water, small
+Chips: Cheetos
+Total: $15.0
