@@ -1,0 +1,10 @@
+Receipt generated on: 20241115-103335
+Sandwich: Wheat 12" Toasted: Yes toppings: Toppings: [lettuce, onions, tomatoes, jalapenos]
+Meat: Steak (extra)
+Cheese: American (extra)
+Sauce: Mayo
+Side: Au jus
+Price: $15.65 
+Drink: Fanta(Orange), large
+Chips: Lays (Barbeque)
+Total: $20.15
