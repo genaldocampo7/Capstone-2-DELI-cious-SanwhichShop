@@ -2,7 +2,7 @@
 
 In this capstone project, I created a point of sales application for a Deli-sandwich shop. The application allows users to fully customize their sandwich orders. Once the user starts the application, they are prompted by the user interface which will guide them into making a sandwich. The user also has an option to add multiple sandwiches to an order as well as a choice of drinks and chips. Once an order is complete, the order will be saved as a file into a receipts folder that displays the user's order with the order date and time. 
 
-I created a diagram as a starting point to show how my application will be structured. I created multiple classes as well an interface that will be implemented from other classes.  
+I created a diagram as a starting point to show how my application will be structured. I created multiple classes as well as an interface that will be implemented from other classes.  
 
 <img width="740" alt="Screenshot 2024-11-15 at 12 46 17 AM" src="https://github.com/user-attachments/assets/2beca9ef-e695-4b27-ab56-2a050fc14720">
 
